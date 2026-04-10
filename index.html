@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@ body {
     font-family: Arial;
     background: #000;
     color: white;
+    direction: rtl;
 }
 
 /* HEADER */
@@ -37,22 +38,20 @@ nav a {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: center;
+    height: 350px;
+    text-align: center;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-    url('رابط_الصورة_ديالك') center/cover;
+    url('https://i.ibb.co/bMPKmFZV/IMG-8351.jpg') center/cover;
 }
 
-.hero-text h1 {
-    font-size: 50px;
+.hero h1 {
+    font-size: 40px;
     color: red;
     text-shadow: 0 0 20px red;
 }
 
-.hero-text p {
-    margin-top: 10px;
-}
-
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -68,23 +67,19 @@ nav a {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    border-top: 1px solid #222;
 }
 
-.stat {
-    text-align: center;
-}
-
-/* SERVICES */
+/* SECTION */
 .section {
     padding: 40px;
     text-align: center;
 }
 
+/* CARDS */
 .cards {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .card {
@@ -93,19 +88,14 @@ nav a {
     padding: 20px;
     border: 1px solid red;
     border-radius: 10px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 0 20px red;
 }
 
 /* REVIEWS */
 .review {
+    background: #111;
     margin-top: 10px;
     padding: 10px;
-    background: #111;
-    border-left: 3px solid red;
+    border-right: 3px solid red;
 }
 
 /* MAP */
@@ -151,53 +141,53 @@ button {
 <header>
 <div class="logo">⚡ HATIM ELECTRIC</div>
 <nav>
-<a href="#">Accueil</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
+<a href="#">الرئيسية</a>
+<a href="#">الخدمات</a>
+<a href="#">اتصل بنا</a>
 </nav>
 </header>
 
 <div class="hero">
-<div class="hero-text">
-<h1>HATIM ELECTRIC</h1>
-<p>Électricité professionnelle à Tanger</p>
-<a class="btn" href="#">Nous contacter</a>
+<div>
+<h1>حاتم للكهرباء ⚡</h1>
+<p>خدمة احترافية في طنجة - سرعة و جودة</p>
+<a class="btn" href="https://wa.me/212XXXXXXXXX">تواصل معنا</a>
 </div>
 </div>
 
 <div class="stats">
-<div class="stat"><h2>+5</h2><p>ANS</p></div>
-<div class="stat"><h2>500+</h2><p>CLIENTS</p></div>
-<div class="stat"><h2>24/24</h2><p>DISPONIBLE</p></div>
+<div><h2>+5</h2><p>سنوات خبرة</p></div>
+<div><h2>500+</h2><p>زبون</p></div>
+<div><h2>24/24</h2><p>متوفر</p></div>
 </div>
 
 <div class="section">
-<h2>Nos services</h2>
+<h2>🔧 خدماتنا</h2>
 <div class="cards">
-<div class="card">Installation électrique</div>
-<div class="card">Dépannage</div>
-<div class="card">Caméras</div>
-<div class="card">Éclairage LED</div>
+<div class="card">تركيب الكهرباء</div>
+<div class="card">إصلاح الأعطال</div>
+<div class="card">كاميرات المراقبة</div>
+<div class="card">إنارة LED</div>
 </div>
 </div>
 
 <div class="section">
-<h2>Avis clients</h2>
-<div class="review">Service rapide 👍</div>
-<div class="review">Très professionnel 👌</div>
+<h2>⭐ آراء الزبناء</h2>
+<div class="review">خدمة ممتازة وسريعة 👍</div>
+<div class="review">أفضل كهربائي في طنجة 👌</div>
 </div>
 
 <div class="section">
-<h2>Localisation</h2>
+<h2>📍 موقعنا</h2>
 <iframe src="https://maps.google.com/maps?q=tanger&output=embed"></iframe>
 </div>
 
 <div class="section">
-<h2>Contact</h2>
-<input type="text" placeholder="Nom"><br>
-<input type="tel" placeholder="Téléphone"><br>
-<textarea placeholder="Message"></textarea><br>
-<button>Envoyer</button>
+<h2>📞 تواصل معنا</h2>
+<input type="text" placeholder="الاسم"><br>
+<input type="tel" placeholder="الهاتف"><br>
+<textarea placeholder="الرسالة"></textarea><br>
+<button>إرسال</button>
 </div>
 
 <a class="whatsapp" href="https://wa.me/212694760224">💬</a>
