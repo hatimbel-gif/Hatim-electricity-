@@ -1,80 +1,121 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>حاتم للكهرباء</title>
+<title>HATIM ELECTRIC</title>
 
 <style>
 body {
     margin: 0;
     font-family: Arial;
-    background: black;
+    background: #000;
     color: white;
 }
 
 /* HEADER */
 header {
+    display: flex;
+    justify-content: space-between;
     padding: 15px;
-    text-align: center;
+    border-bottom: 1px solid red;
+}
+
+.logo {
     color: red;
+    font-weight: bold;
     text-shadow: 0 0 10px red;
+}
+
+nav a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
 }
 
 /* HERO */
 .hero {
-    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
     url('رابط_الصورة_ديالك') center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* TYPING */
-.typing {
+.hero-text h1 {
+    font-size: 50px;
     color: red;
-    font-size: 22px;
-    border-right: 2px solid red;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: typing 4s steps(30) forwards, blink 0.7s infinite;
+    text-shadow: 0 0 20px red;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+.hero-text p {
+    margin-top: 10px;
 }
 
-@keyframes blink {
-    50% { border-color: transparent }
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 10px red;
 }
 
-/* SECTION */
-.section {
-    padding: 30px;
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid #222;
+}
+
+.stat {
     text-align: center;
 }
 
-/* CARDS */
+/* SERVICES */
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .card {
+    flex: 1 1 200px;
     background: #111;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 20px;
     border: 1px solid red;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px red;
 }
 
 /* REVIEWS */
 .review {
-    background: #111;
     margin-top: 10px;
     padding: 10px;
+    background: #111;
     border-left: 3px solid red;
 }
 
-/* FORM */
+/* MAP */
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+/* CONTACT */
 input, textarea {
     width: 90%;
     padding: 10px;
@@ -88,16 +129,8 @@ button {
     margin-top: 10px;
     padding: 10px;
     background: red;
+    border: none;
     color: white;
-    border: none;
-}
-
-/* MAP */
-iframe {
-    width: 100%;
-    height: 250px;
-    margin-top: 10px;
-    border: none;
 }
 
 /* WHATSAPP */
@@ -115,41 +148,59 @@ iframe {
 
 <body>
 
-<header>⚡ حاتم للكهرباء ⚡</header>
+<header>
+<div class="logo">⚡ HATIM ELECTRIC</div>
+<nav>
+<a href="#">Accueil</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</nav>
+</header>
 
 <div class="hero">
-<div class="typing">كهرباء احترافية في طنجة ⚡</div>
+<div class="hero-text">
+<h1>HATIM ELECTRIC</h1>
+<p>Électricité professionnelle à Tanger</p>
+<a class="btn" href="#">Nous contacter</a>
+</div>
+</div>
+
+<div class="stats">
+<div class="stat"><h2>+5</h2><p>ANS</p></div>
+<div class="stat"><h2>500+</h2><p>CLIENTS</p></div>
+<div class="stat"><h2>24/24</h2><p>DISPONIBLE</p></div>
 </div>
 
 <div class="section">
-<h2>🔧 خدماتنا</h2>
-<div class="card">تركيب الكهرباء</div>
-<div class="card">إصلاح الأعطال</div>
-<div class="card">كاميرات المراقبة</div>
+<h2>Nos services</h2>
+<div class="cards">
+<div class="card">Installation électrique</div>
+<div class="card">Dépannage</div>
+<div class="card">Caméras</div>
+<div class="card">Éclairage LED</div>
+</div>
 </div>
 
 <div class="section">
-<h2>⭐ آراء الزبناء</h2>
-<div class="review">خدمة ممتازة 👍</div>
-<div class="review">سريع و محترف 👌</div>
+<h2>Avis clients</h2>
+<div class="review">Service rapide 👍</div>
+<div class="review">Très professionnel 👌</div>
 </div>
 
 <div class="section">
-<h2>📍 موقعنا</h2>
+<h2>Localisation</h2>
 <iframe src="https://maps.google.com/maps?q=tanger&output=embed"></iframe>
 </div>
 
 <div class="section">
-<h2>📩 تواصل معنا</h2>
-<form action="mailto:your@email.com" method="post" enctype="text/plain">
-<input type="text" placeholder="الاسم" required><br>
-<input type="tel" placeholder="الهاتف" required><br>
-<textarea placeholder="الرسالة"></textarea><br>
-<button type="submit">إرسال</button>
-</form>
+<h2>Contact</h2>
+<input type="text" placeholder="Nom"><br>
+<input type="tel" placeholder="Téléphone"><br>
+<textarea placeholder="Message"></textarea><br>
+<button>Envoyer</button>
 </div>
 
-<a class="whatsapp" href="https://wa.me/212XXXXXXXXX">💬</a>
+<a class="whatsapp" href="https://wa.me/212694760224">💬</a>
 
 </body>
 </html>
