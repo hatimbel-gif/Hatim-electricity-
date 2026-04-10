@@ -1,150 +1,214 @@
-<!DOCTYPE html>s
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+<head>💡
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hatim Electric💡</title>
+<title>Hatim Electric ⚡</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{background:#f5f7fa}
+
+header{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:25px;
 }
 
-/* HEADER */
-header {
-    background: #111;
-    color: white;
-    padding: 15px;
-    text-align: center;
+header h1{font-size:30px}
+
+nav{
+background:#102a5c;
+display:flex;
+justify-content:center;
+gap:20px;
+padding:12px;
 }
 
-header h1 {
-    margin: 0;
-    color: #00d4ff;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
 
-/* HERO */
-.hero {
-    height: 90vh;
-    background: url('https://i.ibb.co/bMPKmFZV/IMG-8351.jpg') no-repeat center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+.hero{
+background:url('https://i.ibb.co/bMPKmFZV/IMG-8351.jpg') center/cover;
+height:320px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
 }
 
-.hero h2 {
-    background: rgba(0,0,0,0.6);
-    padding: 20px;
-    border-radius: 10px;
+.hero h2{
+background:rgba(0,0,0,0.6);
+padding:15px;
+border-radius:10px;
 }
 
-/* SERVICES */
-.services {
-    padding: 40px;
-    text-align: center;
+.section{
+padding:50px 20px;
+text-align:center;
 }
 
-.services h2 {
-    margin-bottom: 30px;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
 }
 
-.card {
-    width: 300px;
-    background: #f5f5f5;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
+.card:hover{
+transform:translateY(-8px);
 }
 
-.card:hover {
-    transform: scale(1.05);
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
 }
 
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
 }
 
-.card h3 {
-    padding: 10px;
+.feature{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
-/* FOOTER */
-footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.buttons{
+margin-top:20px;
 }
 
+.btn{
+display:inline-block;
+padding:12px 20px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+}
+
+.call{background:#007bff}
+.whatsapp-btn{background:#25D366}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+footer{
+background:#0a1f44;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Hatim Electric ⚡</h1>
-    <p>خدمات كهرباء احترافية </p>
+<h1>Hatim Electric ⚡</h1>
+<p>خدمات الكهرباء باحترافية عالية</p>
 </header>
 
-<section class="hero">
-    <h2>جودة عالية👌 خدمات سريعة⚡️   Hatim Electric</h2>
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#services">الخدمات</a>
+<a href="#why">لماذا نحن</a>
+<a href="#contact">اتصل بنا</a>
+</nav>
+
+<div class="hero">
+<h2>أفضل خدمات الكهرباء في طنجة ⚡</h2>
+</div>
+
+<section class="section" id="services">
+<h2>خدماتنا</h2>
+
+<div class="services">
+
+<div class="card">
+<img src="https://i.ibb.co/nNQGcBhD/IMG-6587.jpg">
+<h3>تركيب الكهرباء</h3>
+<p>تركيب شامل واحترافي</p>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/QjCNg1r5/IMG-6210.jpg">
+<h3>إصلاح الأعطاب</h3>
+<p>حل سريع لجميع المشاكل</p>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/GN7KQwF.jpg">
+<h3>تركيب LED</h3>
+<p>إضاءة اقتصادية حديثة</p>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/oYiTqum.jpg">
+<h3>صيانة</h3>
+<p>صيانة دورية مضمونة</p>
+</div>
+
+</div>
 </section>
 
-<section class="services">
-    <h2>خدماتنا</h2>
+<section class="section" id="why">
+<h2>لماذا تختارنا؟</h2>
 
-    <div class="low">
+<div class="features">
+<div class="feature">⚡ خبرة عالية</div>
+<div class="feature">⏱️ سرعة في الخدمة</div>
+<div class="feature">💰 أثمنة مناسبة</div>
+<div class="feature">✅ جودة مضمونة</div>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1581092919535-7146ff1a590d" alt="">
-            <h3>تركيب الكهرباء</h3>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4" alt="">
-            <h3>إصلاح الأعطال</h3>
-        </div>
-
-        <div class="card">
-            <img src="https://i.ibb.co/QjCNg1r5/IMG-6210.jpg" alt="">
-            <h3>تركيب الإنارة</h3>
-        </div>
-
-    </div>
 </section>
 
-<footer><a href="https://wa.me/212694760224" class="whatsapp-float" target="_blank">
-  💬
-</a>
+<section class="section" id="contact">
+<h2>اتصل بنا</h2>
 
-<style>
-.whatsapp-float {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 24px;
-  padding: 15px;
-  border-radius: 50%;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-</style>
-    <p>© 2026 Hatim Electric - جميع الحقوق محفوظة</p>
+<p>📞 212694760224+</p>
+<p>📍 طنجة، المغرب</p>
+
+<div class="buttons">
+<a class="btn call" href="tel:+212694760224">اتصال مباشر</a>
+<a class="btn whatsapp-btn" href="https://wa.me/212694760224" target="_blank">واتساب</a>
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/212694760224" target="_blank">💬</a>
+
+<footer>
+<p>© 2026 Hatim Electric - جميع الحقوق محفوظة</p>
 </footer>
 
 </body>
