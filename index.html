@@ -3,229 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hatim Electric ⚡</title>
+
+<title>Hatim Electric | كهربائي في طنجة</title>
+
+<!-- SEO -->
+<meta name="description" content="Hatim Electric كهربائي محترف في طنجة، نقدم خدمات تركيب وإصلاح الكهرباء المنزلية، الإنارة، تدخل سريع وبجودة عالية.">
+<meta name="keywords" content="كهربائي طنجة, كهرباء المنازل, إصلاح الكهرباء, Hatim Electric, electrician Tangier">
+<meta name="author" content="Hatim Electric">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Hatim Electric كهربائي في طنجة">
+<meta property="og:description" content="أفضل خدمات الكهرباء في طنجة - تركيب، إصلاح، إنارة">
+<meta property="og:image" content="https://i.ibb.co/bMPKmFZV/IMG-8351.jpg">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
 
-body{background:#f5f7fa}
+body{background:#111;color:#fff}
 
+/* HEADER */
 header{
-background:#0a1f44;
-color:white;
-text-align:center;
-padding:25px;
-}
-
-header h1{font-size:30px}
-
-nav{
-background:#102a5c;
+background:#000;
+padding:15px;
 display:flex;
-justify-content:center;
-gap:20px;
-padding:12px;
-}
-
-nav a{
-color:yellow;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:url('https://i.ibb.co/bMPKmFZV/IMG-8351.jpg') center/cover;
-height:320px;
-display:flex;
+justify-content:space-between;
 align-items:center;
+}
+
+header h1{color:#ff0000}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("https://i.ibb.co/bMPKmFZV/IMG-8351.jpg") center/cover;
+display:flex;
 justify-content:center;
-color:white;
+align-items:center;
 text-align:center;
 }
 
 .hero h2{
 background:rgba(0,0,0,0.6);
-padding:15px;
-border-radius:10px;
-}
-
-h2{
+padding:20px;
 color:#ff0000;
-margin-bottom:20px;
 }
 
-.section{
-padding:50px 20px;
-text-align:center;
-}
+/* SERVICES */
+.services{padding:40px;text-align:center}
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+.services h2{color:#ff0000;margin-bottom:20px}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
 gap:20px;
+justify-content:center;
 }
 
 .card{
-background: linear-gradient(135deg, #1a1a1a, #000000);
-color:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0, 0, 0, 0.5);
-transition:0.4s;
-border:1px solid #ff0000;
+background:#222;
+width:300px;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
 }
 
-.card:hover{
-transform: translateY(-10px) scale(1.02);
-box-shadow:0 15px 30px rgba(255, 0, 0, 0.6);
-}
+.card:hover{transform:scale(1.05)}
 
 .card img{
 width:100%;
-border-radius:10px;
-margin-bottom:10px;
-transition:0.3s;
+height:200px;
+object-fit:cover;
 }
 
-.card:hover img{
-transform:scale(1.05);
-}
+.card h3{padding:15px}
 
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-margin-top:20px;
-}
-
-.feature{
-background: linear-gradient(135deg, #1a1a1a, #000000);
-color:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.5);
-transition:0.3s;
-border:1px solid #ff0000;
-}
-
-.feature:hover{
-transform: translateY(-6px);
-box-shadow:0 10px 25px rgba(255, 0, 0, 0.7);
-}
-
-.buttons{
-margin-top:20px;
-}
+/* CONTACT */
+.contact{text-align:center;padding:40px}
 
 .btn{
 display:inline-block;
 padding:12px 20px;
-margin:5px;
-border-radius:8px;
+margin:10px;
+background:#ff0000;
+color:#fff;
 text-decoration:none;
-color:white;
+border-radius:5px;
 }
 
-.call{background:#007bff}
-.whatsapp-btn{background:#25D366}
-
+/* WHATSAPP FLOAT */
 .whatsapp{
 position:fixed;
 bottom:20px;
-left:20px;
+right:20px;
 background:#25D366;
-color:white;
+color:#fff;
 padding:15px;
 border-radius:50%;
 font-size:20px;
 text-decoration:none;
 }
 
+/* FOOTER */
 footer{
-background:#0a1f44;
-color:white;
+background:#000;
 text-align:center;
 padding:15px;
-margin-top:30px;
 }
 </style>
+
+<!-- Schema (مهم بزاف ل Google) -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Electrician",
+"name": "Hatim Electric",
+"image": "https://i.ibb.co/bMPKmFZV/IMG-8351.jpg",
+"telephone": "+212694760224",
+"address": {
+"@type": "PostalAddress",
+"addressLocality": "طنجة",
+"addressCountry": "MA"
+},
+"description": "كهربائي محترف في طنجة متخصص في تركيب وإصلاح الكهرباء المنزلية"
+}
+</script>
+
 </head>
 
 <body>
 
 <header>
 <h1>Hatim Electric ⚡</h1>
-<p>خدمات الكهرباء باحترافية عالية</p>
 </header>
 
-<nav>
-<a href="#">الرئيسية</a>
-<a href="#services">الخدمات</a>
-<a href="#why">لماذا نحن</a>
-<a href="#contact">اتصل بنا</a>
-</nav>
+<!-- HERO -->
+<section class="hero">
+<h2>كهربائي محترف في طنجة - Hatim Electric</h2>
+</section>
 
-<div class="hero">
-<h2>أفضل خدمات الكهرباء في طنجة ⚡</h2>
-</div>
+<!-- SERVICES -->
+<section class="services">
+<h2>خدمات الكهرباء في طنجة</h2>
 
-<section class="section" id="services">
-<h2>خدماتنا</h2>
-
-<div class="services">
+<div class="cards">
 
 <div class="card">
-<img src="https://i.ibb.co/nNQGcBhD/IMG-6587.jpg">
-<h3>تركيب الكهرباء</h3>
-<p>تركيب شامل واحترافي</p>
+<img src="https://i.ibb.co/nNQGcBhD/IMG-6587.jpg" alt="تركيب الكهرباء في طنجة Hatim Electric">
+<h3>تركيب الكهرباء المنزلية</h3>
 </div>
 
 <div class="card">
-<img src="https://i.ibb.co/yn0tH9M0/IMG-8222.jpg">
-<h3>إصلاح الأعطاب</h3>
-<p>حل سريع لجميع المشاكل</p>
+<img src="https://i.ibb.co/QjCNg1r5/IMG-6210.jpg" alt="إصلاح الأعطال الكهربائية طنجة">
+<h3>إصلاح الأعطال الكهربائية</h3>
 </div>
 
 <div class="card">
-<img src="https://i.ibb.co/s91gsczf/IMG-6207.jpg">
-<h3>تركيب LED</h3>
-<p>إضاءة اقتصادية حديثة</p>
-</div>
-
-<div class="card">
-<img src="https://i.ibb.co/tpmJfLKM/IMG-6200.jpg">
-<h3>صيانة</h3>
-<p>صيانة دورية مضمونة</p>
+<img src="https://i.ibb.co/nNQGcBhD/IMG-6587.jpg" alt="تركيب الإنارة في طنجة">
+<h3>تركيب الإنارة</h3>
 </div>
 
 </div>
 </section>
 
-<section class="section" id="why">
-<h2>لماذا تختارنا؟</h2>
-
-<div class="features">
-<div class="feature">⚡ خبرة عالية</div>
-<div class="feature">⏱️ سرعة في الخدمة</div>
-<div class="feature">💰 أثمنة مناسبة</div>
-<div class="feature">✅ جودة مضمونة</div>
-</div>
-
+<!-- TEXT SEO -->
+<section class="services">
+<h2>أفضل كهربائي في طنجة</h2>
+<p>
+Hatim Electric يقدم خدمات تركيب وإصلاح الكهرباء في طنجة والنواحي 
+بجودة عالية وسرعة في التدخل. إذا كنت تبحث عن كهربائي في طنجة 
+فنحن الخيار الأفضل لك.
+</p>
 </section>
 
-<section class="section" id="contact">
+<!-- CONTACT -->
+<section class="contact">
 <h2>اتصل بنا</h2>
 
-<p>📞 +212694760224</p>
-<p>📍 طنجة، المغرب</p>
-
-<div class="buttons">
-<a class="btn call" href="tel:+212694760224">اتصال مباشر</a>
-<a class="btn whatsapp-btn" href="https://wa.me/212694760224" target="_blank">واتساب</a>
-</div>
+<a class="btn" href="tel:+212694760224">📞 اتصال مباشر</a>
+<a class="btn" href="https://wa.me/212694760224" target="_blank">💬 واتساب</a>
 
 </section>
 
+<!-- WHATSAPP FLOAT -->
 <a class="whatsapp" href="https://wa.me/212694760224" target="_blank">💬</a>
 
 <footer>
