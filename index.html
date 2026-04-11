@@ -84,12 +84,20 @@ grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:20px;
 margin-top:20px;
 }
-
 .feature{
-background:white;
+background: linear-gradient(135deg, #d4af37, #f1c40f);
+color: #1a1a1a;
+font-weight: bold;
 padding:20px;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 5px 15px rgba(212, 175, 55, 0.4);
+transition:0.3s;
+border:1px solid #e6c200;
+}
+
+.feature:hover{
+transform: translateY(-6px);
+box-shadow:0 10px 25px rgba(212, 175, 55, 0.6);
 }
 
 .buttons{
